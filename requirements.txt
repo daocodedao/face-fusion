@@ -8,4 +8,4 @@ scipy
 modelscope
 torchvision
 onnxruntime
-mmcv
+mmcv-full
