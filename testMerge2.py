@@ -196,5 +196,5 @@ class FaceSwap:
 #Running Swap Directly
 if(__name__ == '__main__'):
     img1 = './images/liudehua.jpg'
-    img2 = 'images/zhoujielun.jpg'
+    img2 = './images/zhoujielun.jpg'
     FaceSwap(image1=img1, image2=img2)
