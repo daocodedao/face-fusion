@@ -6,3 +6,4 @@ requests
 dlib
 scipy
 modelscope
+torchvision
