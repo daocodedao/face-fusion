@@ -16,6 +16,8 @@ if platform.system() == "linux":
 else:
     template_path = './images/liudehua.jpg'
     user_path = './images/zhoujielun.jpg'
+
+print(template_path)
 result = image_face_fusion(dict(template=template_path, user=user_path))
 
 cv2.imwrite('result.png', result[OutputKeys.OUTPUT_IMG])
