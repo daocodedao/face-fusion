@@ -1,3 +1,6 @@
+
+# https://www.modelscope.cn/models/iic/cv_unet_face_fusion_torch/summary
+
 import cv2
 from modelscope.outputs import OutputKeys
 from modelscope.pipelines import pipeline
