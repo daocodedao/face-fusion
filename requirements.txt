@@ -8,4 +8,4 @@ scipy
 modelscope
 torchvision
 onnxruntime
-mmcv-full
+mmcv-full==1.7.1
