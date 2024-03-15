@@ -13,5 +13,5 @@ diffusers>=0.23.0
 mmdet==2.3.0
 transformers
 sentencepiece
-mmcv==0.6.2
+mmcv==1.0.5
 # mmcv-full (need mim install)
