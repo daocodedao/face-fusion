@@ -10,7 +10,8 @@ torchvision
 onnxruntime==1.15.1
 diffusers>=0.23.0
 # mmcv-full==1.7.2
-mmdet==2.26.0
+mmdet==2.3.0
 transformers
 sentencepiece
+mmcv==0.6.2
 # mmcv-full (need mim install)
