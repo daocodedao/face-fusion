@@ -1,3 +1,15 @@
+
+# 安装
+## 环境 
+```
+python3.10 -m venv venv_sovits
+source venv_sovits/bin/activate
+
+requirements.txt 添加 --extra-index-url https://download.pytorch.org/whl/cu118
+
+pip install -r requirements.txt 
+```
+
 # 颜如玉
 
 颜如玉 —— python 人脸融合程序，可实现类似天天P图疯狂换脸、face++人脸融合效果
