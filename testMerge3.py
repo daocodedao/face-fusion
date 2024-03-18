@@ -6,6 +6,11 @@ import cv2
 from modelscope.pipelines import pipeline
 # from modelscope.utils.constant import Tasks
 import platform
+import torch
+
+if not torch.cuda.is_available():
+    print("torch is ok")
+
 
 image_face_fusion = pipeline('face_fusion_torch',
                             model='damo/cv_unet_face_fusion_torch', 
