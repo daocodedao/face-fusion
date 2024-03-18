@@ -9,7 +9,7 @@ echo $workdir
 . colors.sh
 
 venvBinDir=venv/bin/
-pythonPath=${workdir}${venvBinDir}python
+pythonPath=${workdir}/${venvBinDir}python
 echo "Python path:  $pythonPath"
 
 echo "${YELLOW}source ${venvBinDir}activate${NOCOLOR}"
@@ -56,4 +56,4 @@ echo -e "${YELLOW}${pythonPath} $jobName  -t '$templateFilePath' -s '$srcFilePat
 ${pythonPath} $jobName  -t "$templateFilePath" -s "$srcFilePath"  -o "$outputFilePath"
 
 
-# /data/work/face-facefusion/start-mergeface.sh -t "./image/liudehua.jpg" -s "./image/zhoujielun.jpg"  -o "out/out.jpg"
+# /data/work/face-fusion/start-mergeface.sh -t "./image/liudehua.jpg" -s "./image/zhoujielun.jpg"  -o "out/out.jpg"
