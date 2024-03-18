@@ -221,9 +221,6 @@ if(__name__ == '__main__'):
     if len(srcPath) == 0 or not os.path.exists(srcPath):
         api_logger.error("srcPath not exist")
         exit(1)
-    if len(outPath) == 0 or not os.path.exists(outPath):
-        api_logger.error("outPath not exist")
-        exit(1)
 
     # img1 = './images/liudehua.jpg'
     # img2 = './images/zhoujielun.jpg'
