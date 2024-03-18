@@ -17,21 +17,22 @@ invisible-watermark>=0.2.0
 modelscope==1.10.0
 Pillow
 opencv-python
-torchvision
 
-mmengine
-numpy==1.22.0
-protobuf==3.20.1
-timm
-scikit-image==0.19.3
-gradio
-controlnet_aux==0.0.6
-mediapipe
-python-slugify
-mmdet==2.26.0
-SentencePiece
-# mmcv-full (need mim install)
+# torchvision
 
-# https://mmdetection.readthedocs.io/en/v2.26.0/get_started.html
-# pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
-# mim install mmcv-full
+# mmengine
+# numpy==1.22.0
+# protobuf==3.20.1
+# timm
+# scikit-image==0.19.3
+# gradio
+# controlnet_aux==0.0.6
+# mediapipe
+# python-slugify
+# mmdet==2.26.0
+# SentencePiece
+# # mmcv-full (need mim install)
+
+# # https://mmdetection.readthedocs.io/en/v2.26.0/get_started.html
+# # pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
+# # mim install mmcv-full
