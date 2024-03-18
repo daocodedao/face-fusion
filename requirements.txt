@@ -10,8 +10,8 @@ scipy
 
 # facechain
 
-Pillow
-opencv-python
+# Pillow
+# opencv-python
 
 
 # accelerate
