@@ -57,3 +57,5 @@ ${pythonPath} $jobName  -t "$templateFilePath" -s "$srcFilePath"  -o "$outputFil
 
 
 # /data/work/face-fusion/start-mergeface.sh -t "./images/liudehua.jpg" -s "./images/zhoujielun.jpg"  -o "out/out.jpg"
+
+# /mnt/data/face-fusion/start-mergeface.sh -t "./images/liudehua.jpg" -s "./images/zhoujielun.jpg"  -o "out/out.jpg"

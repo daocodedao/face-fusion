@@ -12,4 +12,12 @@ pip install -r requirements.txt
 ```
 
 
+## 使用
+```
+# java1 java2 机器调用
+# 参数 -t 图片1绝对路径
+# 参数 -s 图片2绝对路径
+# 参数 -o 合并后的图片保存路径
+/mnt/data/face-fusion/start-mergeface.sh -t "./images/liudehua.jpg" -s "./images/zhoujielun.jpg"  -o "out/out.jpg"
+```
 
