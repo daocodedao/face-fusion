@@ -8,7 +8,9 @@ from modelscope.pipelines import pipeline
 import platform
 
 image_face_fusion = pipeline('face_fusion_torch',
-                            model='damo/cv_unet_face_fusion_torch', model_revision='v1.0.3')
+                            model='damo/cv_unet_face_fusion_torch', 
+                            model_revision='v1.0.3',
+                            device="cuda:0")
 
 if platform.system() == "linux":
     template_path = 'https://modelscope.oss-cn-beijing.aliyuncs.com/test/images/facefusion_template.jpg'

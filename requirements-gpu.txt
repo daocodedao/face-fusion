@@ -34,3 +34,11 @@ SentencePiece
 # # https://mmdetection.readthedocs.io/en/v2.26.0/get_started.html
 # # pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
 # # mim install mmcv-full
+
+
+# pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
+# mim install mmcv  
+# export CUDA_HOME=/usr/local/cuda-11.8
+ 
+
+# pip install nvidia-cuda-nvcc-cu11
