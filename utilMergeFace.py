@@ -2,6 +2,9 @@ import cv2
 import dlib
 import numpy as np
 import os
+import argparse
+from utils.logger_settings import api_logger
+
 
 class MoreThanOneFaceException(Exception): pass
 class NoFaceException(Exception): pass
@@ -158,7 +161,7 @@ class FaceSwap:
     def generate_name(self, p1, p2):
         return os.path.splitext(os.path.basename(p1))[0], os.path.splitext(os.path.basename(p2))[0]
     
-    def __init__(self, image1, image2):
+    def __init__(self, image1, image2, outPath):
         print("Started Swap")
 
         im1, landmarks1 = self.read_im_and_landmarks(str(image1))
@@ -187,14 +190,36 @@ class FaceSwap:
                     warped_corrected_im2 * combined_mask
 
         i1, i2 = self.generate_name(image1, image2)
-        path = os.path.join(os.getcwd(), f'{i1}-{i2}.jpg')
-        cv2.imwrite(path, output_im)  # saves the image to the path
-        print(f"Output Added to Path: {path}")
+        # path = os.path.join(os.getcwd(), f'{i1}-{i2}.jpg')
+        cv2.imwrite(outPath, output_im)  # saves the image to the path
+        print(f"Output Added to Path: {outPath}")
     
    
 
 #Running Swap Directly
 if(__name__ == '__main__'):
-    img1 = './images/liudehua.jpg'
-    img2 = './images/zhoujielun.jpg'
-    FaceSwap(image1=img1, image2=img2)
+
+    program = argparse.ArgumentParser(formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=100))
+    program.add_argument('-t', '--templatePath', help='templatePath',
+                        dest='templatePath', type=str)
+    program.add_argument('-s', '--srcPath', help='srcPath',
+                        dest='srcPath', type=str)
+    program.add_argument('-o', '--outPath', help='outPath',
+                        dest='outPath', type=str)
+
+
+    args = program.parse_args()
+
+    templatePath = args.templatePath
+    srcFilePath = args.srcFilePath
+    outPath = args.outPath
+
+    if len(templatePath) == 0 or len(srcFilePath) == 0 or len(outPath) == 0:
+        api_logger.error("templatePath or srcFilePath or outPath is empty")
+        exit(1)
+
+
+    # img1 = './images/liudehua.jpg'
+    # img2 = './images/zhoujielun.jpg'
+    api_logger.info("Starting Swapping")
+    FaceSwap(image1=templatePath, image2=srcFilePath, outPath=outPath)
