@@ -16,7 +16,7 @@ modelscope==1.10.0
 # invisible-watermark>=0.2.0
 # modelscope==1.10.0
 
-# torchvision
+torchvision
 
 # mmengine
 # numpy==1.22.0
