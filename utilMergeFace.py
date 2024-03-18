@@ -190,6 +190,7 @@ class FaceSwap:
                     warped_corrected_im2 * combined_mask
 
         i1, i2 = self.generate_name(image1, image2)
+        os.makedirs(os.path.dirname(outPath), exist_ok=True)
         # path = os.path.join(os.getcwd(), f'{i1}-{i2}.jpg')
         cv2.imwrite(outPath, output_im)  # saves the image to the path
         print(f"Output Added to Path: {outPath}")
@@ -214,10 +215,15 @@ if(__name__ == '__main__'):
     srcPath = args.srcPath
     outPath = args.outPath
 
-    if len(templatePath) == 0 or len(srcPath) == 0 or len(outPath) == 0:
-        api_logger.error("templatePath or srcPath or outPath is empty")
+    if len(templatePath) == 0 or not os.path.exists(templatePath):
+        api_logger.error("templatePath not exist")
         exit(1)
-
+    if len(srcPath) == 0 or not os.path.exists(srcPath):
+        api_logger.error("srcPath not exist")
+        exit(1)
+    if len(outPath) == 0 or not os.path.exists(outPath):
+        api_logger.error("outPath not exist")
+        exit(1)
 
     # img1 = './images/liudehua.jpg'
     # img2 = './images/zhoujielun.jpg'
