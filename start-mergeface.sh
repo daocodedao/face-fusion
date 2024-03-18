@@ -56,4 +56,4 @@ echo -e "${YELLOW}${pythonPath} $jobName  -t '$templateFilePath' -s '$srcFilePat
 ${pythonPath} $jobName  -t "$templateFilePath" -s "$srcFilePath"  -o "$outputFilePath"
 
 
-# /data/work/face-fusion/start-mergeface.sh -t "./image/liudehua.jpg" -s "./image/zhoujielun.jpg"  -o "out/out.jpg"
+# /data/work/face-fusion/start-mergeface.sh -t "./images/liudehua.jpg" -s "./images/zhoujielun.jpg"  -o "out/out.jpg"
