@@ -28,7 +28,7 @@ torchvision
 # mediapipe
 # python-slugify
 # mmdet==2.26.0
-# SentencePiece
+SentencePiece
 # # mmcv-full (need mim install)
 
 # # https://mmdetection.readthedocs.io/en/v2.26.0/get_started.html
