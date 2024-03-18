@@ -2,9 +2,9 @@
 # https://www.modelscope.cn/models/iic/cv_unet_face_fusion_torch/summary
 
 import cv2
-from modelscope.outputs import OutputKeys
+# from modelscope.outputs import OutputKeys
 from modelscope.pipelines import pipeline
-from modelscope.utils.constant import Tasks
+# from modelscope.utils.constant import Tasks
 import platform
 
 image_face_fusion = pipeline('face_fusion_torch',
@@ -20,5 +20,5 @@ else:
 print(template_path)
 result = image_face_fusion(dict(template=template_path, user=user_path))
 
-cv2.imwrite('result.png', result[OutputKeys.OUTPUT_IMG])
+cv2.imwrite('result.png', result['output_img'])
 print('finished!')
