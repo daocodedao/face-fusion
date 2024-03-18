@@ -11,7 +11,7 @@ import torch
 if not torch.cuda.is_available():
     print("torch is ok")
 
-exit(0)
+# exit(0)
 
 image_face_fusion = pipeline('face_fusion_torch',
                             model='damo/cv_unet_face_fusion_torch', 
