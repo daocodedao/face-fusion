@@ -211,15 +211,15 @@ if(__name__ == '__main__'):
     args = program.parse_args()
 
     templatePath = args.templatePath
-    srcFilePath = args.srcFilePath
+    srcPath = args.srcPath
     outPath = args.outPath
 
-    if len(templatePath) == 0 or len(srcFilePath) == 0 or len(outPath) == 0:
-        api_logger.error("templatePath or srcFilePath or outPath is empty")
+    if len(templatePath) == 0 or len(srcPath) == 0 or len(outPath) == 0:
+        api_logger.error("templatePath or srcPath or outPath is empty")
         exit(1)
 
 
     # img1 = './images/liudehua.jpg'
     # img2 = './images/zhoujielun.jpg'
     api_logger.info("Starting Swapping")
-    FaceSwap(image1=templatePath, image2=srcFilePath, outPath=outPath)
+    FaceSwap(image1=templatePath, image2=srcPath, outPath=outPath)
