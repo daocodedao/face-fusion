@@ -1,7 +1,7 @@
 #!/bin/bash
 # 翻译英文视频 为 中文视频
 
-workdir="$PWD"
+workdir="/data/work/aishowos/face-fusion"
 cd $workdir
 
 echo $workdir
