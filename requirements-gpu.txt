@@ -27,7 +27,7 @@ torchvision
 # controlnet_aux==0.0.6
 # mediapipe
 # python-slugify
-# mmdet==2.26.0
+mmdet==2.26.0
 SentencePiece
 # # mmcv-full (need mim install)
 
@@ -38,6 +38,7 @@ SentencePiece
 
 # pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
 # mim install mmcv  
+# /usr/local/cuda/bin/nvcc -V
 # export CUDA_HOME=/usr/local/cuda-11.8
 # cp /usr/local/cuda/bin/nvcc /usr/bin/
 
