@@ -29,5 +29,7 @@ pip install -r requirements.txt
 # 参数 -s 图片2绝对路径
 # 参数 -o 合并后的图片保存路径
 /mnt/data/face-fusion/start-mergeface.sh -t "./images/liudehua.jpg" -s "./images/zhoujielun.jpg"  -o "out/out.jpg"
+
+/home/yueban/face-fusion/start-mergeface.sh -t "./images/liudehua.jpg" -s "./images/zhoujielun.jpg"  -o "out/out.jpg"
 ```
 

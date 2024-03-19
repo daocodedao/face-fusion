@@ -16,7 +16,7 @@ onnxruntime==1.15.1
 # invisible-watermark>=0.2.0
 # modelscope==1.10.0
 
-torchvision
+torchvision==0.16
 
 # mmengine
 # numpy==1.22.0
