@@ -39,6 +39,5 @@ SentencePiece
 # pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
 # mim install mmcv  
 # export CUDA_HOME=/usr/local/cuda-11.8
- 
+# cp /usr/local/cuda/bin/nvcc /usr/bin/
 
-# pip install nvidia-cuda-nvcc-cu11

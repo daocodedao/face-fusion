@@ -2,6 +2,7 @@
 # 安装
 ## 环境 
 ```
+cd 到代码目录
 python3.10 -m venv venv
 source venv/bin/activate
 
@@ -10,6 +11,7 @@ requirements.txt 添加 --extra-index-url https://download.pytorch.org/whl/cu118
 
 pip install -r requirements.txt 
 ```
+
 
 
 ## 使用
