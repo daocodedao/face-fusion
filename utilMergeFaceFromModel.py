@@ -9,6 +9,9 @@ import platform
 import torch
 from utils.logger_settings import api_logger
 
+device = "cuda:0"
+if torch.cuda.device_count() > 0:
+    device = "cuda:1"
 
 # exit(0)
 def mergeFace(template_path, user_path, outPath):
@@ -16,13 +19,6 @@ def mergeFace(template_path, user_path, outPath):
                                 model='damo/cv_unet_face_fusion_torch', 
                                 model_revision='v1.0.3',
                                 device="cuda:0")
-
-    # if platform.system() == "linux":
-    #     template_path = 'https://modelscope.oss-cn-beijing.aliyuncs.com/test/images/facefusion_template.jpg'
-    #     user_path = 'https://modelscope.oss-cn-beijing.aliyuncs.com/test/images/facefusion_user.jpg'
-    # else:
-    #     template_path = './images/liudehua.jpg'
-    #     user_path = './images/zhoujielun.jpg'
 
     print(template_path)
     result = image_face_fusion(dict(template=template_path, user=user_path))
