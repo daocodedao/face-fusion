@@ -18,6 +18,8 @@ source venv/bin/activate
 # requirements.txt 添加 --extra-index-url https://download.pytorch.org/whl/cu118
 
 pip install -r requirements.txt 
+
+pip install -r requirements-gpu.txt 
 ```
 
 

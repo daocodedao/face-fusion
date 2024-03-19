@@ -43,3 +43,4 @@ if(__name__ == '__main__'):
     templatePath = args.templatePath
     srcPath = args.srcPath
     outPath = args.outPath  
+    mergeFace(templatePath, srcPath, outPath)

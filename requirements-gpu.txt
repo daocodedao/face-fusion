@@ -30,6 +30,7 @@ torchvision==0.16
 mmdet==2.26.0
 SentencePiece
 # # mmcv-full (need mim install)
+openmim
 
 # # https://mmdetection.readthedocs.io/en/v2.26.0/get_started.html
 # # pip install -U openmim -i https://pypi.tuna.tsinghua.edu.cn/simple
