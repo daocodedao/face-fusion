@@ -7,3 +7,4 @@ worker_data/
 processed/
 processed_labeled/
 out/
+logs/
