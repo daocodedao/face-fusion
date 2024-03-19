@@ -17,6 +17,6 @@ else:
     template_path = './images/liudehua.jpg'
     user_path = './images/zhoujielun.jpg'
 
-outPath = "./out/mergeface"
+outPath = "./out/mergeface.jpg"
 mergeFace(template_path, user_path, outPath)
 print("done")
