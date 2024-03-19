@@ -4,9 +4,9 @@
 workdir="/data/work/aishowos/face-fusion"
 cd $workdir
 
-echo $workdir
+echo "workdir:"$workdir
 
-. colors.sh
+. ${workdir}/colors.sh
 
 venvBinDir=venv/bin/
 pythonPath=${workdir}/${venvBinDir}python
